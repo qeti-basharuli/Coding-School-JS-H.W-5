@@ -1,0 +1,40 @@
+
+.header-wraper {
+    background-color: aquamarine;
+    padding: 30px;
+    position: relative;
+}
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-ul {
+    display: flex;
+}
+.burger-bar {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font: 30px;
+    display: none;
+}
+
+
+@media (max-width:480px) {
+    .burger-bar {
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+    .nav-block {
+        flex-direction: column;
+    }
+    .nav-ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation.activeNav {
+        display: block;
+    }
+}
